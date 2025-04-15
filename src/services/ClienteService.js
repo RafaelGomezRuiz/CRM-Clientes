@@ -17,5 +17,8 @@ export default {
     cambiarEstado(id,data){
         console.log(data);
         return api.patch('/Personas/'+ id, {estado:data})
+    },
+    eliminarCliente(id){
+        return api.delete('/Personas/' + id)
     }
 }

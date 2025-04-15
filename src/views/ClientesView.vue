@@ -29,6 +29,15 @@ const actualizarEstado = ({id,estado})=>{
     )
 }
 
+const eliminarCliente = (id) =>{
+    ClienteService.eliminarCliente(id)
+        .then((data)=>{
+            personas.value = personas.value.filter(cliente => cliente.id !== id);
+            console.log(personas.value);
+        })
+        .catch(error=>console.log(error))
+}
+
 defineProps({
     titulo:{type:String}
 })
@@ -60,6 +69,7 @@ defineProps({
                                     :key="cliente.id"
                                     :cliente="cliente"
                                     @actualizar-estado="actualizarEstado"
+                                    @eliminar-cliente = "eliminarCliente"
                                 />
                             </tbody>
                         </table>
