@@ -1,0 +1,24 @@
+{
+  "Personas": [
+    {
+      "nombre": "ww nwq",
+      "apellido": "ww",
+      "email": "ww@gmail.com",
+      "telefono": "122-222-2222",
+      "empresa": "saw",
+      "puesto": "ww",
+      "id": "2633",
+      "estado": true
+    },
+    {
+      "id": "2634",
+      "nombre": "ww",
+      "apellido": "ww",
+      "email": "ww@gmail.com",
+      "telefono": "122-222-2222",
+      "empresa": "saw",
+      "puesto": "ww",
+      "estado": false
+    }
+  ]
+}
